@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Guest Reservation App</string>
+<!--    Input fields -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+<!--    Button -->
+    <string name="login_btn">Sign In</string>
+    <string name="register_btn">Sign Up</string>
+</resources>

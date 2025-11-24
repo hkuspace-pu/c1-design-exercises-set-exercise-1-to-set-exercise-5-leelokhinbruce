@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:padding="16dp"
     tools:context=".CompleteProfileActivity">
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -14,12 +14,14 @@
         android:layout_height="36dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
+        android:layout_marginTop="32dp"
         android:src="@drawable/left_arrow_icon" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginTop="32dp"
         android:orientation="vertical">
 
         <TextView
@@ -88,6 +90,13 @@
                 android:inputType="textPersonName"
                 android:textAppearance="@style/input_field_text" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textAppearance="@style/regular_text"
+            android:paddingBottom="4dp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"

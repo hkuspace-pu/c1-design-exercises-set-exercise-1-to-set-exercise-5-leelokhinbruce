@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".CompleteProfileActivity"
             android:exported="false" />
         <activity

@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">Guest Reservation App</string>
-<!--    Input fields -->
+    <!--    Input Field's Hints -->
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="gender">Gender</string>
 
-<!--    Button -->
+    <!--    Buttons -->
     <string name="login_btn">Sign In</string>
     <string name="register_btn">Sign Up</string>
+    <string name="complete_btn">Complete</string>
 </resources>

@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".CompleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

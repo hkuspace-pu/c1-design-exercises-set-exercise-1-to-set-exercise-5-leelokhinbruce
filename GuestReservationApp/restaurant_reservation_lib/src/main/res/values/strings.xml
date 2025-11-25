@@ -15,6 +15,8 @@
     <string name="register_btn">Sign Up</string>
     <string name="complete_btn">Complete</string>
     <string name="book">Book</string>
+    <string name="select">Select</string>
+    <string name="history">History</string>
 
     <!--    Screen Title -->
     <string name="home">Home</string>

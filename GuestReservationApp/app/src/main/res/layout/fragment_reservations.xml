@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ReservationsFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/reservations" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingBottom="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/screen_title_text"
+                    android:text="@string/reservations" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/TopRightButtonCorners"
+                    android:id="@+id/btnHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingHorizontal="12dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/history"
+                    android:textAppearance="@style/section_text"
+                    app:iconSize="36dp"
+                    app:icon="@drawable/history_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

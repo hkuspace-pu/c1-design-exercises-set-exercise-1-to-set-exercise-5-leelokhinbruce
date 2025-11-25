@@ -66,11 +66,23 @@
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance_top_cardview_custom_corners</item>
     </style>
 
+    <style name="TopRightButtonCorners" parent="@style/Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_top_right_botton_corners</item>
+    </style>
+
     <style name="ShapeAppearance_top_cardview_custom_corners" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopLeft">0dp</item>
         <item name="cornerSizeTopRight">0dp</item>
         <item name="cornerSizeBottomLeft">32dp</item>
         <item name="cornerSizeBottomRight">32dp</item>
+    </style>
+
+    <style name="ShapeAppearance_top_right_botton_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 </resources>

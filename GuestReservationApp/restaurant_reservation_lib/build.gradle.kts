@@ -1,21 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
 }
 
 android {
-    namespace = "com.example.guestreservationapp"
+    namespace = "com.example.restaurant_reservation_lib"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.guestreservationapp"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -31,20 +28,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-
-    // Enable ViewBinding
-    buildFeatures {
-        viewBinding = true;
-    }
 }
 
 dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    implementation(libs.play.services.maps)
-    implementation(project(":restaurant_reservation_lib"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

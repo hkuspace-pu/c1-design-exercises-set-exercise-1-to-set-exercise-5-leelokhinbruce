@@ -20,6 +20,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="16dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -70,12 +71,19 @@
             </LinearLayout>
         </FrameLayout>
 
-        <!--        Map -->
+        <!-- Map -->
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
+
+<!--    Sample selected location -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/select_location_icon"
+        android:layout_centerInParent="true" />
 
     <!--   Location Card View -->
     <com.google.android.material.card.MaterialCardView
@@ -83,6 +91,7 @@
         android:layout_height="203dp"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="12dp"
         app:strokeColor="@android:color/transparent">
 
@@ -127,7 +136,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="12dp"
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -145,7 +153,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:paddingVertical="4dp"
+                        android:paddingHorizontal="8dp"
                         android:orientation="horizontal">
 
                         <androidx.appcompat.widget.AppCompatTextView
@@ -165,8 +174,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/view_details"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/underline"
                 android:textAppearance="@style/link_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select"
+                android:padding="12dp"
+                android:background="@drawable/btn_bg"
+                android:textAppearance="@style/btn_text" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 

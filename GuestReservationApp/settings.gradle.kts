@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Guest Reservation App"
 include(":app")
 include(":adminreservationmanagementapp")
+include(":restaurant_reservation_lib")

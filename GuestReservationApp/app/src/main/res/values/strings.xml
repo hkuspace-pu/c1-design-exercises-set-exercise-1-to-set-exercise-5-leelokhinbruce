@@ -14,6 +14,7 @@
     <string name="login_btn">Sign In</string>
     <string name="register_btn">Sign Up</string>
     <string name="complete_btn">Complete</string>
+    <string name="book">Book</string>
 
     <!--    Screen Title -->
     <string name="home">Home</string>
@@ -21,6 +22,32 @@
     <string name="reservations">Reservations</string>
     <string name="discover">Discover</string>
     <string name="profile">Profile</string>
+    <string name="my_points">My Points</string>
+
+<!--   Meal Time -->
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="tea_time">Tea Time</string>
+    <string name="dinner">Dinner</string>
+
+<!--  Available Service  -->
+    <string name="night_menu">Night Menu</string>
+    <string name="lobby_seating">Lobby Seating</string>
+    <string name="open_24_hrs">Open 24 hrs</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="restroom">Restroom</string>
+    <string name="party_room">Party Room</string>
+    <string name="wifi">Wifi</string>
+
+<!--    Regular Text-->
+    <string name="zero">0</string>
+    <string name="serving_time">Serving Time:</string>
+    <string name="location">Location</string>
+    <string name="special_offers">Special Offers</string>
+
+<!--    Link -->
+    <string name="see_all">See All</string>
+    <string name="view_details">View Details</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

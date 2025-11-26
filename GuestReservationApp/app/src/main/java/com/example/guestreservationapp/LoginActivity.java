@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.guestreservationapp.databinding.ActivityLoginBinding;
+import com.example.guestreservationapp.mainpage.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding binding;

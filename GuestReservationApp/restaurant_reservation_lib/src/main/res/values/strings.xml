@@ -1,30 +1,31 @@
 <resources>
     <string name="app_name">Guest Reservation App</string>
 
-    <!--    Input Field's Hint -->
-    <string name="email">Email</string>
+    <!--    Credential Term -->
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="firstname">First Name</string>
-    <string name="lastname">Last Name</string>
-    <string name="phone_number">Phone Number</string>
-    <string name="gender">Gender</string>
 
     <!--    Button -->
     <string name="login_btn">Sign In</string>
     <string name="register_btn">Sign Up</string>
+    <string name="logout_btn">Sign Out</string>
     <string name="complete_btn">Complete</string>
     <string name="book">Book</string>
     <string name="select">Select</string>
     <string name="history">History</string>
+    <string name="update_btn">Update</string>
 
     <!--    Screen Title -->
     <string name="home">Home</string>
     <string name="menu">Menu</string>
     <string name="reservations">Reservations</string>
+    <string name="reservation">Reservation</string>
     <string name="discover">Discover</string>
     <string name="profile">Profile</string>
     <string name="my_points">My Points</string>
+    <string name="reservation_history">Reservation History</string>
+    <string name="my_profile">My Profile</string>
+    <string name="settings">Settings</string>
 
 <!--   Meal Time -->
     <string name="breakfast">Breakfast</string>
@@ -41,7 +42,28 @@
     <string name="party_room">Party Room</string>
     <string name="wifi">Wifi</string>
 
-<!--    Regular Text-->
+<!--   Reservation Status -->
+    <string name="pending">Pending</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="attended">Attended</string>
+    <string name="unattended">Unattended</string>
+
+<!--   Reservation Details -->
+    <string name="date">Date</string>
+    <string name="Time">Time</string>
+    <string name="guest">Guests</string>
+    <string name="occasion">Occasion</string>
+    
+<!--    Profile Details-->
+    <string name="email">Email</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="gender">Gender</string>
+
+<!--    Other Regular Text-->
     <string name="zero">0</string>
     <string name="serving_time">Serving Time:</string>
     <string name="location">Location</string>

@@ -12,7 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".reservation.ReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myprofile.PhoneNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myprofile.PersonalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myprofile.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation.ReservationHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainpage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".CompleteProfileActivity"

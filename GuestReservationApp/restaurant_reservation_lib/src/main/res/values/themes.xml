@@ -11,11 +11,6 @@
     <style name="Theme.GuestReservationApp" parent="Base.Theme.GuestReservationApp" />
 
 <!--    Text Style -->
-    <style name="regular_text">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/black</item>
-    </style>
-
     <style name="screen_title_text">
         <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/black</item>
@@ -28,8 +23,19 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="btn_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="section_text">
         <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="regular_text">
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
@@ -38,16 +44,9 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="btn_text">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="small_btn_text">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textStyle">bold</item>
+    <style name="small_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="link_text">
@@ -56,8 +55,14 @@
     </style>
 
     <style name="orange_link_text">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/orange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="small_btn_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>
 

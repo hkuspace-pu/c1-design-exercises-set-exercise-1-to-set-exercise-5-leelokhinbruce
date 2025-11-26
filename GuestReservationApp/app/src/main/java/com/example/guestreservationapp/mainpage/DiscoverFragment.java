@@ -1,4 +1,4 @@
-package com.example.guestreservationapp;
+package com.example.guestreservationapp.mainpage;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MenuFragment extends Fragment {
+import com.example.guestreservationapp.R;
+
+public class DiscoverFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu, container, false);
+        return inflater.inflate(R.layout.fragment_discover, container, false);
     }
 }

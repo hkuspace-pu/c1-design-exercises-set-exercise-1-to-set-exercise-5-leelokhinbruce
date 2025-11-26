@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_margin="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".reservation.ReservationActivity">
@@ -16,7 +15,8 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="32dp">
+            android:paddingVertical="32dp"
+            android:paddingHorizontal="16dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -38,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
+            android:layout_marginStart="16dp"
             android:text="@string/date"
             android:textAppearance="@style/section_text" />
 
@@ -45,38 +46,43 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:scrollbars="none"
             android:fillViewport="true">
 
             <LinearLayout
+                android:id="@+id/dateCardContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+<!--               List Date CardViews -->
+            </LinearLayout>
+        </HorizontalScrollView>
 
-<!--               Sample - Date Options -->
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="105dp"
-                    android:layout_height="88dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/Time"
+            android:textAppearance="@style/section_text" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
+        <!--       Date List -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:scrollbars="none"
+            android:fillViewport="true">
 
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingBottom="8dp"
-                            android:text="Nov 6"
-                            android:textAppearance="@style/section_text" />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Today"
-                            android:textAppearance="@style/small_text" />
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:id="@+id/timeCardContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!--               List Date CardViews -->
             </LinearLayout>
         </HorizontalScrollView>
 

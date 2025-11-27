@@ -348,7 +348,7 @@
                                         android:layout_gravity="center"
                                         android:paddingHorizontal="8dp"
                                         android:paddingVertical="8dp"
-                                        android:text="Browse Menu"
+                                        android:text="@string/view_menu"
                                         android:textAppearance="@style/small_btn_text" />
                                 </com.google.android.material.card.MaterialCardView>
                             </LinearLayout>

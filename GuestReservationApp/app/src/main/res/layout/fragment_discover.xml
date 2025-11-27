@@ -129,7 +129,7 @@
                     android:layout_height="28dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cancel_icon" />
+                    android:src="@drawable/close_icon" />
             </LinearLayout>
 
             <LinearLayout

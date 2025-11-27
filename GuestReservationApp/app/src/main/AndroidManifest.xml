@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
+            android:name=".reservation.ETicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation.BookSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation.ConfirmBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation.BookingOfferActivity"
+            android:exported="false" />
+        <activity
             android:name=".reservation.ReservationActivity"
             android:exported="false" />
         <activity

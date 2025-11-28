@@ -21,11 +21,17 @@ public class ReservationsFragment extends Fragment {
         binding = FragmentReservationsBinding.inflate(getLayoutInflater(), container, false);
         View view = binding.getRoot();
 
-        binding.btnHistory.setOnClickListener(viewHistory ->
-                startActivity(new Intent(getActivity(), ReservationHistoryActivity.class)));
+        binding.btnHistory.setOnClickListener(viewHistory -> {
+            Intent intent = new Intent(getContext(), ReservationHistoryActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
 
-        binding.btnBook.setOnClickListener(viewBook ->
-                startActivity(new Intent(getActivity(), ReservationActivity.class)));
+        binding.btnBook.setOnClickListener(viewBook -> {
+            Intent intent = new Intent(getContext(), ReservationActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
 
         return view;
     }

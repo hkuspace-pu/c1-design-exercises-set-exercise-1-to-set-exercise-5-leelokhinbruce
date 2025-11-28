@@ -225,7 +225,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/btn_bg"
         android:padding="12dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="82dp"
         android:text="@string/view_e_ticket"
         android:textAppearance="@style/btn_text" />
 
@@ -236,6 +236,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="12dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/view_reservations"
         android:textAppearance="@style/btn_text"
         android:textColor="@color/orange" />

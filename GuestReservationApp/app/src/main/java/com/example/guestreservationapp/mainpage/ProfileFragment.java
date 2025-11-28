@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.guestreservationapp.MyPointsActivity;
 import com.example.guestreservationapp.R;
 import com.example.guestreservationapp.databinding.FragmentProfileBinding;
 import com.example.guestreservationapp.myprofile.MyProfileActivity;
@@ -39,6 +40,12 @@ public class ProfileFragment extends Fragment {
 
         binding.frameBtnSettings.setOnClickListener(viewSettings -> {
             Intent intent = new Intent(getContext(), SettingsActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
+
+        binding.frameBtnMyPoint.setOnClickListener(viewMyPoint -> {
+            Intent intent = new Intent(getContext(), MyPointsActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         });

@@ -12,4 +12,8 @@
     <color name="disable">#EBEBEB</color>
     <color name="link">#07A9E4</color>
     <color name="line">#F1F1F1</color>
+
+<!--    disable color for switch button-->
+    <color name="unchecked_thumb">#8c8c8c</color>
+    <color name="unchecked_track">#cdcdcd</color>
 </resources>

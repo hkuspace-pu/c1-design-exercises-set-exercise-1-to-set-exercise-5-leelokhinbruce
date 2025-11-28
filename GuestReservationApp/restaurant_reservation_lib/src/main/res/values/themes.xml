@@ -71,6 +71,11 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="small_grey_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
 <!--    Custom Card Corner -->
     <style name="CustomCardCorners" parent="@style/Widget.MaterialComponents.CardView">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance_top_cardview_custom_corners</item>

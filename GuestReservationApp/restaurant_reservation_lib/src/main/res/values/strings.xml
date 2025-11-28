@@ -3,7 +3,10 @@
 
     <!--    Credential Term -->
     <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
+    <string name="confirmed_password">Confirmed Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirmed_new_password">Confirmed New Password</string>
 
     <!--    Button -->
     <string name="login_btn">Sign In</string>
@@ -21,6 +24,7 @@
     <string name="view_e_ticket">View E-Ticket</string>
     <string name="view_reservations">View Reservations</string>
     <string name="close_btn">Close</string>
+    <string name="reset_btn">Reset</string>
 
     <!--    Screen Title -->
     <string name="home">Home</string>
@@ -34,14 +38,24 @@
     <string name="reservation_history">Reservation History</string>
     <string name="my_profile">My Profile</string>
     <string name="settings">Settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="delete_account">Delete Account</string>
     <string name="confirm_booking">Confirm Booking</string>
     <string name="e_ticket">E-Ticket</string>
+    <string name="notifications">Notifications</string>
 
 <!--   Meal Time -->
     <string name="breakfast">Breakfast</string>
     <string name="lunch">Lunch</string>
     <string name="tea_time">Tea Time</string>
     <string name="dinner">Dinner</string>
+    
+    <string name="promotions">Promotions</string>
+    <string name="burgers">Burgers</string>
+    <string name="crispy_thighs">Crispy Thighs</string>
+    <string name="beverages">Beverages</string>
+    <string name="desserts">Desserts</string>
 
 <!--  Available Service  -->
     <string name="night_menu">Night Menu</string>
@@ -78,6 +92,12 @@
     <string name="phone_number">Phone Number</string>
     <string name="gender">Gender</string>
 
+<!--   Notification Settings -->
+    <string name="all_push_notifications">All Push Notifications</string>
+    <string name="my_reservations">My Reservations</string>
+    <string name="activity_and_promotion">Activity and Promotion</string>
+    <string name="restaurant_close">Restaurant Close</string>
+
 <!--    Other Regular Text-->
     <string name="zero">0</string>
     <string name="serving_time">Serving Time:</string>
@@ -86,6 +106,9 @@
     <string name="without_offer">Without Offer</string>
     <string name="reference_no">Reference No: </string>
     <string name="optional">Optional</string>
+    <string name="points">points</string>
+    <string name="earned">Earned</string>
+    <string name="used">Used</string>
 
 <!--    Link -->
     <string name="see_all">See All</string>

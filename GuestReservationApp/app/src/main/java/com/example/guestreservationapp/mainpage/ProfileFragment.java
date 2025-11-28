@@ -13,6 +13,7 @@ import com.example.guestreservationapp.R;
 import com.example.guestreservationapp.databinding.FragmentProfileBinding;
 import com.example.guestreservationapp.myprofile.MyProfileActivity;
 import com.example.guestreservationapp.reservation.ReservationHistoryActivity;
+import com.example.guestreservationapp.settings.SettingsActivity;
 
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding binding;
@@ -30,13 +31,16 @@ public class ProfileFragment extends Fragment {
             startActivity(intent);
         });
 
-        binding.frameBtnHistory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getContext(), ReservationHistoryActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }
+        binding.frameBtnHistory.setOnClickListener(viewHistory -> {
+            Intent intent = new Intent(getContext(), ReservationHistoryActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
+
+        binding.frameBtnSettings.setOnClickListener(viewSettings -> {
+            Intent intent = new Intent(getContext(), SettingsActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         });
 
         return view;

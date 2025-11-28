@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
+            android:name=".SpecificMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPointsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.DeleteAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.NotificationSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".reservation.ETicketActivity"
             android:exported="false" />
         <activity

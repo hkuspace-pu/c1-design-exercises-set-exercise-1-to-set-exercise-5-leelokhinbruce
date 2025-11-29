@@ -1,24 +1,24 @@
 package com.example.adminreservationmanagementapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.adminreservationmanagementapp.databinding.ActivityLoginBinding;
+import com.example.adminreservationmanagementapp.mainpage.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
+    private ActivityLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());  // create a instance of the binding class
+        View view = binding.getRoot();  // get a reference to the root view of the corresponding layout file
+        setContentView(view);  // make it the active view on the screen
+
+        binding.btnLogin.setOnClickListener(viewLogin ->
+                startActivity(new Intent(LoginActivity.this, MainActivity.class)));
     }
 }

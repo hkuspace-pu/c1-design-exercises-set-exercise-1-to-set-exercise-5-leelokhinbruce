@@ -7,4 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".mainpage.MainActivity">
 
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:fabCradleMargin="12dp"
+        app:fabCradleRoundedCornerRadius="32dp"
+        app:fabAlignmentMode="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemHorizontalTranslationEnabled="false"
+        android:backgroundTint="@color/white"
+        app:hideOnScroll="false">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:itemHorizontalTranslationEnabled="false"
+            app:itemIconSize="32dp"
+            app:itemIconTint="@drawable/bottom_nav_selector"
+            app:itemTextColor="@drawable/bottom_nav_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
 </androidx.constraintlayout.widget.ConstraintLayout>

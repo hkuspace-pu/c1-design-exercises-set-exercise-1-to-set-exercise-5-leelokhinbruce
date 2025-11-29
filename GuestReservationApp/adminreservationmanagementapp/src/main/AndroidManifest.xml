@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
+            android:name=".settings.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainpage.MainActivity"
             android:exported="false" />
         <activity

@@ -8,6 +8,7 @@
     <string name="new_password">New Password</string>
     <string name="confirmed_new_password">Confirmed New Password</string>
     <string name="username">Username</string>
+    <string name="role">Role</string>
 
     <!--    Button -->
     <string name="login_btn">Sign In</string>
@@ -27,6 +28,7 @@
     <string name="close_btn">Close</string>
     <string name="reset_btn">Reset</string>
     <string name="scan">Scan</string>
+    <string name="add_item">Add Item</string>
 
     <!--    Screen Title -->
     <string name="home">Home</string>
@@ -47,6 +49,8 @@
     <string name="e_ticket">E-Ticket</string>
     <string name="notifications">Notifications</string>
     <string name="more">More</string>
+    <string name="account_details">Account Details</string>
+    <string name="change_branch_status">Change Branch Status</string>
 
 <!--   Meal Time -->
     <string name="breakfast">Breakfast</string>

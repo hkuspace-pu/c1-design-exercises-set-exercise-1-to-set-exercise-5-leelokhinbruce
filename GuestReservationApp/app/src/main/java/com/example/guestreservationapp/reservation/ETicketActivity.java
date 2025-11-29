@@ -15,7 +15,6 @@ public class ETicketActivity extends AppCompatActivity {
         setContentView(binding.getRoot());  // make it the active view on the screen
 
         // Back to Book Success screen
-        binding.imgBtnBack.setOnClickListener(viewBack -> finish());
         binding.btnClose.setOnClickListener(viewClose -> finish());
     }
 }

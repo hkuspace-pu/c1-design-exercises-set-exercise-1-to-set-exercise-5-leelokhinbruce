@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:padding="16dp"
     tools:context=".LoginActivity">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,26 +18,26 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Discover Your Restaurant"
+            android:text="Manage\nYour Restaurant"
             android:textAlignment="center"
             android:paddingBottom="58dp"
             android:textSize="36sp"
-            android:textColor="@color/orange"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/textInputEmail"
+            android:id="@+id/textInputUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email"
+            android:hint="@string/username"
             android:textColorHint="@color/hint_and_stroke"
             android:paddingBottom="12dp"
             app:boxStrokeColor="@color/orange"
             app:endIconMode="clear_text"
             app:endIconTint="@color/grey"
             app:passwordToggleTint="@color/grey"
-            app:placeholderText="peter@gmail.com"
+            app:placeholderText="admin123"
             app:placeholderTextColor="@color/hint_and_stroke">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -45,9 +45,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:lines="1"
-                android:maxLength="50"
-                android:ems="50"
-                android:inputType="textWebEmailAddress"
+                android:maxLength="30"
+                android:ems="30"
+                android:inputType="textPersonName"
                 android:textAppearance="@style/input_field_text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,43 +85,14 @@
             android:layout_gravity="end" />
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_bg"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="28dp"
-            android:background="@drawable/btn_bg"
-            android:padding="12dp"
-            android:text="@string/login_btn"
-            android:textAppearance="@style/btn_text" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="24dp"
-            android:orientation="horizontal">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Don't have an account? "
-                android:textSize="16sp"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/linkRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/register_btn"
-                android:background="@drawable/underline"
-                android:textAppearance="@style/link_text" />
-        </LinearLayout>
-    </LinearLayout>
-
+        android:textAppearance="@style/btn_text" />
 </RelativeLayout>

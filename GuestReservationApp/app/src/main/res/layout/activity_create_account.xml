@@ -32,7 +32,6 @@
             android:textColorHint="@color/hint_and_stroke"
             android:paddingBottom="12dp"
             app:boxStrokeColor="@color/orange"
-            app:counterMaxLength="30"
             app:endIconMode="clear_text"
             app:endIconTint="@color/grey"
             app:passwordToggleTint="@color/grey"
@@ -43,7 +42,9 @@
                 android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:ems="30"
+                android:lines="1"
+                android:maxLength="50"
+                android:ems="50"
                 android:inputType="textWebEmailAddress"
                 android:textAppearance="@style/input_field_text" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -57,6 +58,7 @@
             android:textColorHint="@color/hint_and_stroke"
             android:paddingBottom="12dp"
             app:boxStrokeColor="@color/orange"
+            app:counterEnabled="true"
             app:counterMaxLength="30"
             app:endIconMode="password_toggle"
             app:endIconTint="@color/grey"
@@ -66,6 +68,8 @@
                 android:id="@+id/editPasswd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:lines="1"
+                android:maxLength="30"
                 android:ems="30"
                 android:inputType="textPassword"
                 android:textAppearance="@style/input_field_text" />
@@ -89,6 +93,8 @@
                 android:id="@+id/editConfirmPasswd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:lines="1"
+                android:maxLength="30"
                 android:ems="30"
                 android:inputType="textPassword"
                 android:textAppearance="@style/input_field_text" />

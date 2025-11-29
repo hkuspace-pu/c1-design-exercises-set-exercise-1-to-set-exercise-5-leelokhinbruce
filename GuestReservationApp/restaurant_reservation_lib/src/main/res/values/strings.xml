@@ -7,6 +7,7 @@
     <string name="current_password">Current Password</string>
     <string name="new_password">New Password</string>
     <string name="confirmed_new_password">Confirmed New Password</string>
+    <string name="username">Username</string>
 
     <!--    Button -->
     <string name="login_btn">Sign In</string>

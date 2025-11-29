@@ -100,4 +100,9 @@
         <item name="cornerSizeBottomLeft">12dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
+
+<!--   Custom Spinner -->
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="background">@drawable/spinner_dropdown</item>
+    </style>
 </resources>

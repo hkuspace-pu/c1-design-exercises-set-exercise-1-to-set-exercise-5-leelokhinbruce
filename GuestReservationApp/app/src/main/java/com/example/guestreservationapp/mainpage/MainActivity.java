@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         discoverFragment = new DiscoverFragment();
         profileFragment = new ProfileFragment();
 
+        // Set by default fragment
         if (savedInstanceState == null)
             setCurrentFragment(homeFragment);  // Load the initial fragment
 

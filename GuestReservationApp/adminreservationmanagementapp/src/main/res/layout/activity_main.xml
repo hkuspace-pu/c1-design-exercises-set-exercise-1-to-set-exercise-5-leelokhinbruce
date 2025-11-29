@@ -11,42 +11,36 @@
         android:id="@+id/mainContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        style="@style/Widget.MaterialComponents.BottomAppBar"
-        android:id="@+id/bottomAppBar"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        app:fabCradleMargin="12dp"
-        app:fabCradleRoundedCornerRadius="32dp"
-        app:fabAlignmentMode="center"
+        android:background="@drawable/bottom_nav_bar_rounded_corner"
+        android:elevation="0dp"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@drawable/bottom_nav_selector"
+        app:itemTextColor="@drawable/bottom_nav_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:itemHorizontalTranslationEnabled="false"
-        android:backgroundTint="@color/white"
-        app:hideOnScroll="false">
+        app:menu="@menu/bottom_nav_menu" >
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imgBtnScan"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
             android:background="@android:color/transparent"
-            android:elevation="0dp"
-            app:itemHorizontalTranslationEnabled="false"
-            app:itemIconSize="32dp"
-            app:itemIconTint="@drawable/bottom_nav_selector"
-            app:itemTextColor="@drawable/bottom_nav_selector"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_nav_menu" />
-    </com.google.android.material.bottomappbar.BottomAppBar>
+            android:scaleType="fitXY"
+            android:src="@drawable/qr_code_circle_icon" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

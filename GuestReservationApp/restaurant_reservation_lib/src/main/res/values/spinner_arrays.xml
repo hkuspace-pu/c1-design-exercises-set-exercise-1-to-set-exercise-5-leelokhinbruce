@@ -16,4 +16,17 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+
+    <string-array name="category">
+        <item>Burger</item>
+        <item>Beverage</item>
+        <item>Crispy Thigh</item>
+        <item>Dessert</item>
+        <item>Twisty Pasta</item>
+    </string-array>
+
+    <string-array name="yes_or_no">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
 </resources>

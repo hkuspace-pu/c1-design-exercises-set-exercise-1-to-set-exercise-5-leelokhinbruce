@@ -47,8 +47,7 @@
             app:boxStrokeColor="@color/orange"
             app:endIconMode="clear_text"
             app:endIconTint="@color/grey"
-            app:passwordToggleTint="@color/grey"
-            app:placeholderText="peter@gmail.com"
+            app:placeholderText="Peter"
             app:placeholderTextColor="@color/hint_and_stroke">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -74,8 +73,7 @@
             app:counterMaxLength="30"
             app:endIconMode="clear_text"
             app:endIconTint="@color/grey"
-            app:passwordToggleTint="@color/grey"
-            app:placeholderText="peter@gmail.com"
+            app:placeholderText="Parker"
             app:placeholderTextColor="@color/hint_and_stroke">
 
             <com.google.android.material.textfield.TextInputEditText

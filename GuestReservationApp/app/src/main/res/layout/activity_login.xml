@@ -36,7 +36,6 @@
             app:boxStrokeColor="@color/orange"
             app:endIconMode="clear_text"
             app:endIconTint="@color/grey"
-            app:passwordToggleTint="@color/grey"
             app:placeholderText="peter@gmail.com"
             app:placeholderTextColor="@color/hint_and_stroke">
 

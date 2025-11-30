@@ -9,6 +9,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuestReservationApp">
         <activity
+            android:name=".AddMenuItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservations.ReservationHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".settings.AccountDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".settings.SettingsActivity"
             android:exported="false" />
         <activity

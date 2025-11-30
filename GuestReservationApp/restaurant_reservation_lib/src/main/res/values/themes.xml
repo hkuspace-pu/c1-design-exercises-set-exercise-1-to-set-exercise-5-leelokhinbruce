@@ -101,6 +101,16 @@
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
+<!--   Chip Corner -->
+    <style name="ChipCorners" parent="">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_chip_corners</item>
+    </style>
+
+    <style name="ShapeAppearance_chip_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
 <!--   Custom Spinner -->
     <style name="CustomSpinner" parent="Widget.AppCompat.Spinner">
         <item name="background">@drawable/spinner_dropdown</item>

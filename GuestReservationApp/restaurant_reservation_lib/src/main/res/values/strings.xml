@@ -29,6 +29,7 @@
     <string name="reset_btn">Reset</string>
     <string name="scan">Scan</string>
     <string name="add_item">Add Item</string>
+    <string name="submit_btn">Submit</string>
 
     <!--    Screen Title -->
     <string name="home">Home</string>
@@ -104,6 +105,17 @@
     <string name="my_reservations">My Reservations</string>
     <string name="activity_and_promotion">Activity and Promotion</string>
     <string name="restaurant_close">Restaurant Close</string>
+    
+<!--   Menu Item -->
+    <string name="food_name">Food Name</string>
+    <string name="price">Price</string>
+    <string name="meal_time">Meal Time</string>
+    <string name="meals">Meals</string>
+    <string name="normal_meal">Normal</string>
+    <string name="large_meal">Large</string>
+    <string name="special_large_meal">Special Large</string>
+    <string name="category">Category</string>
+    <string name="is_promotion">Is Promotion</string>
 
 <!--    Other Regular Text-->
     <string name="zero">0</string>

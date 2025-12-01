@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import com.example.guestreservationapp.R;
 import com.example.guestreservationapp.SpecificMenuActivity;
 import com.example.guestreservationapp.databinding.FragmentMenuBinding;
+import com.google.android.material.card.MaterialCardView;
 
 public class MenuFragment extends Fragment {
     private FragmentMenuBinding binding;
@@ -20,12 +21,27 @@ public class MenuFragment extends Fragment {
         binding = FragmentMenuBinding.inflate(getLayoutInflater(), container, false);
         View view = binding.getRoot();
 
+        setupCardClick(binding.cardViewBtnBreakfast, "Breakfast");
+        setupCardClick(binding.cardViewBtnLunch, "Lunch");
+        setupCardClick(binding.cardViewBtnTeaTime, "Tea Time");
+        setupCardClick(binding.cardViewBtnDinner, "Dinner");
+
         binding.cardViewBtnLunch.setOnClickListener(viewBreakfast -> {
             Intent intent = new Intent(getContext(), SpecificMenuActivity.class);
+            intent.putExtra("screen_title", "Lunch");
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         });
 
         return view;
+    }
+
+    private void setupCardClick(MaterialCardView cardViewBtn, String menuType) {
+        cardViewBtn.setOnClickListener(viewMenu -> {
+            Intent intent = new Intent(getContext(), SpecificMenuActivity.class);
+            intent.putExtra("screen_title", menuType);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
     }
 }

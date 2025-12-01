@@ -51,7 +51,7 @@
             android:background="@color/line"
             android:orientation="vertical">
 
-<!--           Sample - Categories -->
+            <!--           Sample - Categories -->
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -105,8 +105,8 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/line"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:background="@color/line">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -117,20 +117,22 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
                     android:gravity="center"
                     android:padding="12dp"
                     android:text="@string/promotions"
                     android:textAppearance="@style/small_text"
-                    android:textStyle="bold"
-                    android:background="@color/white"
-                    android:layout_marginBottom="1dp" />
+                    android:textStyle="bold" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:padding="12dp"
-                    android:background="@color/white"
                     android:layout_marginBottom="1dp"
-                    android:orientation="horizontal">
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="67dp"
@@ -138,19 +140,20 @@
                         android:src="@drawable/photo_icon" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="Item Name"
+                            android:ellipsize="end"
                             android:lines="1"
                             android:maxLength="20"
-                            android:ellipsize="end"
+                            android:text="Item Name"
                             android:textAppearance="@style/small_text" />
 
                         <LinearLayout
@@ -168,18 +171,26 @@
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="price"
+                                android:text="@string/price"
                                 android:textAppearance="@style/regular_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ming_cute_more_icon" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:padding="12dp"
-                    android:background="@color/white"
                     android:layout_marginBottom="1dp"
-                    android:orientation="horizontal">
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="67dp"
@@ -187,19 +198,20 @@
                         android:src="@drawable/photo_icon" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="Item Name"
+                            android:ellipsize="end"
                             android:lines="1"
                             android:maxLength="20"
-                            android:ellipsize="end"
+                            android:text="Item Name"
                             android:textAppearance="@style/small_text" />
 
                         <LinearLayout
@@ -217,18 +229,26 @@
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="price"
+                                android:text="@string/price"
                                 android:textAppearance="@style/regular_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ming_cute_more_icon" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:padding="12dp"
-                    android:background="@color/white"
                     android:layout_marginBottom="1dp"
-                    android:orientation="horizontal">
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="67dp"
@@ -236,19 +256,20 @@
                         android:src="@drawable/photo_icon" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="Item Name"
+                            android:ellipsize="end"
                             android:lines="1"
                             android:maxLength="20"
-                            android:ellipsize="end"
+                            android:text="Item Name"
                             android:textAppearance="@style/small_text" />
 
                         <LinearLayout
@@ -266,29 +287,38 @@
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="price"
+                                android:text="@string/price"
                                 android:textAppearance="@style/regular_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ming_cute_more_icon" />
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
                     android:gravity="center"
                     android:padding="12dp"
                     android:text="@string/burgers"
                     android:textAppearance="@style/small_text"
-                    android:textStyle="bold"
-                    android:background="@color/white"
-                    android:layout_marginBottom="1dp" />
+                    android:textStyle="bold" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:padding="12dp"
-                    android:background="@color/white"
                     android:layout_marginBottom="1dp"
-                    android:orientation="horizontal">
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="67dp"
@@ -296,19 +326,20 @@
                         android:src="@drawable/photo_icon" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="Item Name"
+                            android:ellipsize="end"
                             android:lines="1"
                             android:maxLength="20"
-                            android:ellipsize="end"
+                            android:text="Item Name"
                             android:textAppearance="@style/small_text" />
 
                         <LinearLayout
@@ -326,18 +357,26 @@
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="price"
+                                android:text="@string/price"
                                 android:textAppearance="@style/regular_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ming_cute_more_icon" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:padding="12dp"
-                    android:background="@color/white"
                     android:layout_marginBottom="1dp"
-                    android:orientation="horizontal">
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="67dp"
@@ -345,19 +384,20 @@
                         android:src="@drawable/photo_icon" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="Item Name"
+                            android:ellipsize="end"
                             android:lines="1"
                             android:maxLength="20"
-                            android:ellipsize="end"
+                            android:text="Item Name"
                             android:textAppearance="@style/small_text" />
 
                         <LinearLayout
@@ -375,18 +415,26 @@
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="price"
+                                android:text="@string/price"
                                 android:textAppearance="@style/regular_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ming_cute_more_icon" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:padding="12dp"
-                    android:background="@color/white"
                     android:layout_marginBottom="1dp"
-                    android:orientation="horizontal">
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
 
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="67dp"
@@ -394,19 +442,20 @@
                         android:src="@drawable/photo_icon" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="12dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
                         <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
-                            android:text="Item Name"
+                            android:ellipsize="end"
                             android:lines="1"
                             android:maxLength="20"
-                            android:ellipsize="end"
+                            android:text="Item Name"
                             android:textAppearance="@style/small_text" />
 
                         <LinearLayout
@@ -424,10 +473,17 @@
                             <androidx.appcompat.widget.AppCompatTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="price"
+                                android:text="@string/price"
                                 android:textAppearance="@style/regular_text" />
                         </LinearLayout>
                     </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ming_cute_more_icon" />
                 </LinearLayout>
 
             </LinearLayout>

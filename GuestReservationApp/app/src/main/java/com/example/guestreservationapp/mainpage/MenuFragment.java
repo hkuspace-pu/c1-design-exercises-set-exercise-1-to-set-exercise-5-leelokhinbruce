@@ -26,16 +26,10 @@ public class MenuFragment extends Fragment {
         setupCardClick(binding.cardViewBtnTeaTime, "Tea Time");
         setupCardClick(binding.cardViewBtnDinner, "Dinner");
 
-        binding.cardViewBtnLunch.setOnClickListener(viewBreakfast -> {
-            Intent intent = new Intent(getContext(), SpecificMenuActivity.class);
-            intent.putExtra("screen_title", "Lunch");
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        });
-
         return view;
     }
 
+    // Browse Menu
     private void setupCardClick(MaterialCardView cardViewBtn, String menuType) {
         cardViewBtn.setOnClickListener(viewMenu -> {
             Intent intent = new Intent(getContext(), SpecificMenuActivity.class);

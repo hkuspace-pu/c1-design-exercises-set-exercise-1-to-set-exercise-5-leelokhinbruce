@@ -6,11 +6,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.adminreservationmanagementapp.ReservationPagerAdapter;
 import com.example.adminreservationmanagementapp.databinding.FragmentReservationsBinding;
 import com.example.adminreservationmanagementapp.reservations.ReservationHistoryActivity;
 
 public class ReservationsFragment extends Fragment {
     private FragmentReservationsBinding binding;
+    private ReservationPagerAdapter pagerAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

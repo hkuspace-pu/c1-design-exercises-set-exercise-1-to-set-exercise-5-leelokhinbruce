@@ -53,11 +53,63 @@
             android:fillViewport="true">
 
             <LinearLayout
-                android:id="@+id/dateCardContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-<!--               List Date CardViews -->
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupDate"
+                    app:singleSelection="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+<!--                    Sample of chips -->
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nov 6"
+                        android:textAppearance="@style/regular_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nov 7"
+                        android:textAppearance="@style/regular_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nov 8"
+                        android:textAppearance="@style/regular_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nov 9"
+                        android:textAppearance="@style/regular_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nov 10"
+                        android:textAppearance="@style/regular_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -79,11 +131,72 @@
             android:fillViewport="true">
 
             <LinearLayout
-                android:id="@+id/timeCardContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-                <!--               List Date CardViews -->
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupTime"
+                    app:singleSelection="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+<!--                    Sample of chips -->
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:00"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:30"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17:00"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17:30"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18:00"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18:30"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -105,11 +218,81 @@
             android:fillViewport="true">
 
             <LinearLayout
-                android:id="@+id/guestCardContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-                <!--               List Date CardViews -->
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupGuest"
+                    app:singleSelection="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--                    Sample of chips -->
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:textAppearance="@style/small_text"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -131,11 +314,53 @@
             android:fillViewport="true">
 
             <LinearLayout
-                android:id="@+id/occasionCardContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-                <!--               List Date CardViews -->
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupOccasion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--                    Sample of chips -->
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friends Gathering"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family Gathering"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipCorners"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dating"
+                        android:textAppearance="@style/small_text"
+                        app:chipEndPadding="12dp"
+                        app:chipStartPadding="12dp"
+                        app:chipStrokeColor="@color/hint_and_stroke" />
+                </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
         </HorizontalScrollView>
     </LinearLayout>

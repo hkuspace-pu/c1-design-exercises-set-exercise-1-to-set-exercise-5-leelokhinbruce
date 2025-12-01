@@ -20,6 +20,7 @@
             android:background="@drawable/big_ticket"
             android:gravity="center_horizontal"
             android:orientation="vertical"
+            android:layout_marginTop="36dp"
             android:paddingTop="32dp"
             android:paddingBottom="48dp"
             android:paddingHorizontal="52dp">
@@ -28,7 +29,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.9"
+                android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
@@ -63,8 +64,7 @@
 <!--           Booking Details -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="270dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -166,7 +166,6 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_marginVertical="16dp"
                     android:background="@color/hint_and_stroke" />
 
                 <LinearLayout
